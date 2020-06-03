@@ -28,9 +28,11 @@ extra:
     - icon: fontawesome/brands/github-alt
       link: https://github.com/dhis2
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/dhis2
+      link: https://twitter.com/dhis_2
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/dhis2
     - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/dhis2 
+      link: https://www.linkedin.com/company/dhis-2 
 
 #plugins
 plugins:
