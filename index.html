@@ -1,0 +1,1142 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Support for DHIS2 Documentation">
+      
+      
+        <link rel="canonical" href="https://dhis2.github.io/dhis2-doc-support/index.html">
+      
+      
+        <meta name="author" content="DHIS2 Team">
+      
+      <link rel="shortcut icon" href="en/resources/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.2">
+    
+    
+      
+        <title>Guidelines - DHIS2 Documentation Support</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.a2408e81.min.css">
+      
+        <link rel="stylesheet" href="assets/stylesheets/palette.a46bcfb3.min.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="">
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="en/resources/css/mkdocs_dhis2.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="white" data-md-color-accent="blue">
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#guidelines-on-how-to-use-markdown-github-and-transifex-for-our-area-specific-dhis2-documentation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://dhis2.github.io/dhis2-doc-support/" title="DHIS2 Documentation Support" class="md-header-nav__button md-logo" aria-label="DHIS2 Documentation Support">
+      
+  <img src="en/resources/images/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            DHIS2 Documentation Support
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Guidelines
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/dhis2/dhis2-doc-support/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://dhis2.github.io/dhis2-doc-support/" title="DHIS2 Documentation Support" class="md-nav__button md-logo" aria-label="DHIS2 Documentation Support">
+      
+  <img src="en/resources/images/logo.svg" alt="logo">
+
+    </a>
+    DHIS2 Documentation Support
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/dhis2/dhis2-doc-support/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Guidelines
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="index.html" title="Guidelines" class="md-nav__link md-nav__link--active">
+      Guidelines
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#in-a-nutshell" class="md-nav__link">
+    In a nutshell
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#goal-of-these-guidelines" class="md-nav__link">
+    Goal of these guidelines
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#audience" class="md-nav__link">
+    Audience
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#context-and-decision-factors" class="md-nav__link">
+    Context and decision factors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#objectives" class="md-nav__link">
+    Objectives
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflow-and-step-by-step-guidelines" class="md-nav__link">
+    Workflow and step-by-step guidelines
+  </a>
+  
+    <nav class="md-nav" aria-label="Workflow and step-by-step guidelines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#suggested-workflow-to-contribute-to-area-specific-documentation" class="md-nav__link">
+    Suggested workflow to contribute to area specific documentation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detailed-workflow" class="md-nav__link">
+    Detailed workflow
+  </a>
+  
+    <nav class="md-nav" aria-label="Detailed workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-0-create-an-account-on-github-and-set-up-git" class="md-nav__link">
+    Step 0 - Create an account on Github and set up Git
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-1-2-3-set-up-a-working-copy-on-your-computer" class="md-nav__link">
+    Step 1, 2 &amp; 3 - Set up a working copy on your computer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-5-create-a-branch-and-start-writing" class="md-nav__link">
+    Step 4 &amp; 5 - Create a branch and start writing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6-stage-the-changes" class="md-nav__link">
+    Step 6 - Stage the changes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-7-push-to-your-github-repository" class="md-nav__link">
+    Step 7 - Push to your Github repository
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-8-9-pull-request-update-of-the-fork-and-the-area-specific-documentation-repositories" class="md-nav__link">
+    Step 8 &amp; 9 - Pull request &amp; update of the fork and the area specific documentation repositories
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-10-update-the-doc-portal-when-identified" class="md-nav__link">
+    Step 10 - update the doc portal (when identified)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-11-12-1-14-15-translate-the-documentation-when-identified" class="md-nav__link">
+    Step 11, 12, 1, 14 &amp; 15 Translate the documentation (when identified)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#writing-documentation-in-markdown" class="md-nav__link">
+    Writing documentation in Markdown
+  </a>
+  
+    <nav class="md-nav" aria-label="Writing documentation in Markdown">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-a-new-document" class="md-nav__link">
+    Create a new document
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edit-a-document-already-available-in-repo" class="md-nav__link">
+    Edit a document already available in repo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convert-a-document-that-we-have-already-created" class="md-nav__link">
+    Convert a document that we have already created
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#suggested-tools" class="md-nav__link">
+    Suggested Tools
+  </a>
+  
+    <nav class="md-nav" aria-label="Suggested Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#offline-editors" class="md-nav__link">
+    Offline editors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#online-editors" class="md-nav__link">
+    Online editors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-markdown-editors" class="md-nav__link">
+    Other Markdown Editors
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standalone-version-of-the-documentation" class="md-nav__link">
+    Standalone version of the documentation
+  </a>
+  
+    <nav class="md-nav" aria-label="Standalone version of the documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-next-step-slides-towards-a-more-automatised-workflow" class="md-nav__link">
+    A next step - slides, towards a more automatised workflow
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extra-resources" class="md-nav__link">
+    Extra resources
+  </a>
+  
+    <nav class="md-nav" aria-label="Extra resources">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git-and-github" class="md-nav__link">
+    GIT and Github
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#markdown" class="md-nav__link">
+    Markdown
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="en/workflow-dhis2-doc.html" title="Suggested workflow" class="md-nav__link">
+      Suggested workflow
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="en/Building%20your%20documentation.html" title="Building your documentation" class="md-nav__link">
+      Building your documentation
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#in-a-nutshell" class="md-nav__link">
+    In a nutshell
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#goal-of-these-guidelines" class="md-nav__link">
+    Goal of these guidelines
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#audience" class="md-nav__link">
+    Audience
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#context-and-decision-factors" class="md-nav__link">
+    Context and decision factors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#objectives" class="md-nav__link">
+    Objectives
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflow-and-step-by-step-guidelines" class="md-nav__link">
+    Workflow and step-by-step guidelines
+  </a>
+  
+    <nav class="md-nav" aria-label="Workflow and step-by-step guidelines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#suggested-workflow-to-contribute-to-area-specific-documentation" class="md-nav__link">
+    Suggested workflow to contribute to area specific documentation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detailed-workflow" class="md-nav__link">
+    Detailed workflow
+  </a>
+  
+    <nav class="md-nav" aria-label="Detailed workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-0-create-an-account-on-github-and-set-up-git" class="md-nav__link">
+    Step 0 - Create an account on Github and set up Git
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-1-2-3-set-up-a-working-copy-on-your-computer" class="md-nav__link">
+    Step 1, 2 &amp; 3 - Set up a working copy on your computer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-5-create-a-branch-and-start-writing" class="md-nav__link">
+    Step 4 &amp; 5 - Create a branch and start writing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6-stage-the-changes" class="md-nav__link">
+    Step 6 - Stage the changes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-7-push-to-your-github-repository" class="md-nav__link">
+    Step 7 - Push to your Github repository
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-8-9-pull-request-update-of-the-fork-and-the-area-specific-documentation-repositories" class="md-nav__link">
+    Step 8 &amp; 9 - Pull request &amp; update of the fork and the area specific documentation repositories
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-10-update-the-doc-portal-when-identified" class="md-nav__link">
+    Step 10 - update the doc portal (when identified)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-11-12-1-14-15-translate-the-documentation-when-identified" class="md-nav__link">
+    Step 11, 12, 1, 14 &amp; 15 Translate the documentation (when identified)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#writing-documentation-in-markdown" class="md-nav__link">
+    Writing documentation in Markdown
+  </a>
+  
+    <nav class="md-nav" aria-label="Writing documentation in Markdown">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-a-new-document" class="md-nav__link">
+    Create a new document
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edit-a-document-already-available-in-repo" class="md-nav__link">
+    Edit a document already available in repo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convert-a-document-that-we-have-already-created" class="md-nav__link">
+    Convert a document that we have already created
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#suggested-tools" class="md-nav__link">
+    Suggested Tools
+  </a>
+  
+    <nav class="md-nav" aria-label="Suggested Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#offline-editors" class="md-nav__link">
+    Offline editors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#online-editors" class="md-nav__link">
+    Online editors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-markdown-editors" class="md-nav__link">
+    Other Markdown Editors
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standalone-version-of-the-documentation" class="md-nav__link">
+    Standalone version of the documentation
+  </a>
+  
+    <nav class="md-nav" aria-label="Standalone version of the documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-next-step-slides-towards-a-more-automatised-workflow" class="md-nav__link">
+    A next step - slides, towards a more automatised workflow
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extra-resources" class="md-nav__link">
+    Extra resources
+  </a>
+  
+    <nav class="md-nav" aria-label="Extra resources">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git-and-github" class="md-nav__link">
+    GIT and Github
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#markdown" class="md-nav__link">
+    Markdown
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/dhis2/dhis2-doc-support/blob/master/docs/index.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  
+                
+                
+                <h1 id="guidelines-on-how-to-use-markdown-github-and-transifex-for-our-area-specific-dhis2-documentation">Guidelines on how to use Markdown, Github and Transifex for our area specific DHIS2 documentation<a class="headerlink" href="#guidelines-on-how-to-use-markdown-github-and-transifex-for-our-area-specific-dhis2-documentation" title="Permanent link">&para;</a></h1>
+<h2 id="in-a-nutshell">In a nutshell<a class="headerlink" href="#in-a-nutshell" title="Permanent link">&para;</a></h2>
+<p>Let's use <strong>Markdown</strong> as our (main) format for (most of) our documentation (except for binaries), <strong>Github</strong> as our sharing, collaboration and when applicable, publishing platform, and let's integrate with <strong>Transifex</strong> to perform translation.</p>
+<p>Here are the key 4 steps:</p>
+<ol>
+<li>Fork then clone the repository on Github you want to contribute to</li>
+<li>Start contributing to the documentation on your local machine using Markdown</li>
+<li>Push your contribution back to Github and initiate a discussion</li>
+<li>Merge to make your contribution officially available and ready for translation</li>
+</ol>
+<h2 id="goal-of-these-guidelines">Goal of these guidelines<a class="headerlink" href="#goal-of-these-guidelines" title="Permanent link">&para;</a></h2>
+<p>This document aims:</p>
+<ul>
+<li>at describing a suggested workflow, step-by-step and related tools to create, edit, share, collaborate, translate and publish area specific documentation related to DHIS2;</li>
+<li>to be used as guidelines by contributors willing to take part in the DHIS2 documentation effort.</li>
+</ul>
+<p>By <strong>documentation</strong>, we refer to any manual, textbook or other document supporting DHIS2 as defined by the <a href="https://www.gnu.org/licenses/fdl-1.3.html">GNU Free Documentation License</a></p>
+<p>These guidlines are not meant to be a substitute for all the great resources already available out there regarding Github or Markdown, but rather focus on the specifics of the suggested workflow and tools. Therefore, we will try as much as possible to redirect you to available resources to guide you further.</p>
+<h2 id="audience">Audience<a class="headerlink" href="#audience" title="Permanent link">&para;</a></h2>
+<p>This document is intended for contributors to the DHIS2 documentation, who are certainly tech enthusiasts ;) but are not necessarily developers.</p>
+<h2 id="context-and-decision-factors">Context and decision factors<a class="headerlink" href="#context-and-decision-factors" title="Permanent link">&para;</a></h2>
+<p>Google Docs is a great way to quickly create and collaborate on docs, but styling is not easy to unify, versioning is a bit tricky, publication to a large audience can be risky and it is not integrated with our translation tool.</p>
+<p>On the other side, we can see with <a href="https://docs.dhis2.org/">docs.dhis2.org</a> that the combination of <strong>Markdown</strong>, <strong>Github</strong> and <strong>Transifex</strong> allows for all of the above in a structured and secured manner. The 2 main drawbacks that we can see at this stage are that realtime collaboration is not as straight-forward as in Google Drive and we need to get ourselves familiar with Markdown and Github. The good news is:</p>
+<ul>
+<li>there should soon be a solution for realtime collaboration with <a href="https://github.com/features/codespaces/">Codespaces</a>, currently in limited beta.</li>
+<li>learning Markdown is reasonably fast. A 10-minute tutorial is all you need to start writing. Practicing &amp; peer support will do the rest.  </li>
+<li>many tutorials (listed below) are available to grasp the basics of Github. We suggest that you go through the <a href="https://lab.github.com/githubtraining/paths/first-day-on-github">First Day on GitHub</a>.</li>
+<li>Github made teams collaboration more accessible with <a href="(https://github.blog/2020-04-14-github-is-now-free-for-teams/)">private repositories with collaborators free of charge</a>. This is useful for our workflow as we may not always want WIP support material, and even sometimes finalised one to be publicly available. As you may have noticed, these guidelines are currently stored in such a repo.</li>
+</ul>
+<h2 id="objectives">Objectives<a class="headerlink" href="#objectives" title="Permanent link">&para;</a></h2>
+<p>So, we want to implement of a solution that strengthen our documentation process. The workflow to be detailed in the coming sections aims at:</p>
+<ul>
+<li>reducing the workload related to maintaining area specific documentation;</li>
+<li>securing the distribution of the documention according to the targeted audience and channels;</li>
+<li>integrating area specific documentation into the standard documentation workflow whenever possible by using possible the same language (therefore the ssame tools);</li>
+<li>easing the standardisation of the presentation of the content by using a light and structured language;</li>
+<li>easing the translation of the training material by creating files in a format that can be integrated in the current workflow;</li>
+<li>being easy to use, after a short adaptation phase.</li>
+</ul>
+<h2 id="workflow-and-step-by-step-guidelines">Workflow and step-by-step guidelines<a class="headerlink" href="#workflow-and-step-by-step-guidelines" title="Permanent link">&para;</a></h2>
+<h3 id="suggested-workflow-to-contribute-to-area-specific-documentation">Suggested workflow to contribute to area specific documentation<a class="headerlink" href="#suggested-workflow-to-contribute-to-area-specific-documentation" title="Permanent link">&para;</a></h3>
+<p>The following sequence diagram <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> illustrates in a simplified way how collaborators should contribute to a specific area documentation such as DHIS2 COVID19 Documentation or DHIS2 Android App.</p>
+<p><img alt="workflow" src="en/resources/images/workflow.jpg" /></p>
+<h3 id="detailed-workflow">Detailed workflow<a class="headerlink" href="#detailed-workflow" title="Permanent link">&para;</a></h3>
+<p>Below you will find a step-by-step. May you be unfamiliar with Github, we recommnand that take a couple of hours to take the set of free courses "<a href="https://lab.github.com/githubtraining/paths/first-day-on-github">First Day on GitHub</a>"</p>
+<h4 id="step-0-create-an-account-on-github-and-set-up-git">Step 0 - Create an account on Github and set up Git<a class="headerlink" href="#step-0-create-an-account-on-github-and-set-up-git" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Create an account on <a href="https://github.com/">Github.com</a></li>
+<li>Install the <a href="https://desktop.github.com/">Github Deskop client</a> on your machine. Alternatively, and if you feel confident enough, you can use command line and refer to <a href="https://help.github.com/en/github/getting-started-with-github/set-up-git">Github help</a> for guidance.</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
+<p>May you not be with confortable with command line, we highly recommand that you use the <a href="https://desktop.github.com/">Github Deskop client</a> to handle the Github workflow.</p>
+</div>
+<h4 id="step-1-2-3-set-up-a-working-copy-on-your-computer">Step 1, 2 &amp; 3 - Set up a working copy on your computer<a class="headerlink" href="#step-1-2-3-set-up-a-working-copy-on-your-computer" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Fork the repo available on <a href="https://github.com/dhis2">DHIS2's Github account</a> you want to contribute to. This will allow you to quietly work with your own version of the project, without being impacted by the other collaborators' work. In the event that you need to create a new repository that will be added to the documentation workflow, we suggest that you use our <a href="tbd">template repository</a>.</li>
+<li>Clone the forked/created from template repository to have it on your local machine and be able to perform any contribution you want to, such as creating a new markdown document or editing a current one.</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tools to use</p>
+<p>A Git client such as <em>Github Desktop</em>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can read more on how to <a href="https://help.github.com/en/desktop/contributing-to-projects/cloning-and-forking-repositories-from-github-desktop">clone and fork repositories using GitHub Desktop</a>.
+May you want to have more detailed info, or if you deceided you use command line, you can read more on:</p>
+<ul>
+<li><a href="https://help.github.com/en/github/getting-started-with-github/fork-a-repo">forking a repository</a> and <a href="https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template">Creating a repository from a template</a>;</li>
+<li><a href="https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github">cloning a repository</a>.</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The template repository follows the structure described in the <a href="https://github.com/dhis2/dhis2-docs#structure">dhis2-docs repo</a>, therefore eases the integration with teh DHIS2 Documentation.</p>
+</div>
+<h4 id="step-4-5-create-a-branch-and-start-writing">Step 4 &amp; 5 - Create a branch and start writing<a class="headerlink" href="#step-4-5-create-a-branch-and-start-writing" title="Permanent link">&para;</a></h4>
+<ol>
+<li>A best practice consists in creating a branch for any contribution you are about to work on. You want to do this via the Github Desktop client you have installed in <a href="#step-0-create-an-account-on-github-and-set-up-git"><strong>Step 0</strong></a>.</li>
+<li>Create and/or edit your document using Markdown as language.</li>
+<li>Save your edits in your local repository.</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tools to use</p>
+<p>A Git client such as <em>Github Desktop</em> to create a banch and a text editor such as <em>Typora</em> to work o the document and save it.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can read more on how to <a href="https://help.github.com/en/desktop/contributing-to-projects/making-changes-in-a-branch">create a branch using Github Desktop</a>.</p>
+</div>
+<h4 id="step-6-stage-the-changes">Step 6 - Stage the changes<a class="headerlink" href="#step-6-stage-the-changes" title="Permanent link">&para;</a></h4>
+<p>A best practice consists in preparing and checking and probably more importantly choosing the changes you want to commit, especially of you have done a lot of them in various files.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tools to use</p>
+<p>A Git client such as <em>Github Desktop</em>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can read more on how to <a href="https://help.github.com/en/desktop/contributing-to-projects/committing-and-reviewing-changes-to-your-project#2-selecting-changes-to-include-in-a-commit">Select changes to include in a commit using Github Desktop</a>.</p>
+</div>
+<h4 id="step-7-push-to-your-github-repository">Step 7 - Push to your Github repository<a class="headerlink" href="#step-7-push-to-your-github-repository" title="Permanent link">&para;</a></h4>
+<p>Once you have chosen all the changes you want to commit, it is time to push them and make them available on the Github repository you have created in <a href="#step-1-2-3-set-up-a-working-copy-on-your-computer">Step 1</a>. Remember to write a commit message to help other contributors and possible reviewers to understand what you have changed.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tools to use</p>
+<p>A Git client such as <em>Github Desktop</em>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can read more on how to <a href="https://help.github.com/en/desktop/contributing-to-projects/committing-and-reviewing-changes-to-your-project#3-write-a-commit-message-and-push-your-changes">write a commit message and push your changes using Github Desktop</a>.</p>
+</div>
+<h4 id="step-8-9-pull-request-update-of-the-fork-and-the-area-specific-documentation-repositories">Step 8 &amp; 9 - Pull request &amp; update of the fork and the area specific documentation repositories<a class="headerlink" href="#step-8-9-pull-request-update-of-the-fork-and-the-area-specific-documentation-repositories" title="Permanent link">&para;</a></h4>
+<p>The changes you have made are now available in your fork. You want to integrate those with the rest of the documentation that is already available in the repository. To do so, you need to send a pull request and merge. In your fork this process should be fairly straightforward as you are the only one to work on it!</p>
+<p>When the master branch of your repo includes all the changes you wanted to have, meaning when you have approved the pull request mentioned above, and in order to share and publish these changes with your target audience, you need to create a pull request to the area specific documentation repository.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tools to use</p>
+<p>Tools: a Git client such as <em>Github Desktop</em> and <a href="https://github.com/dhis2"><em>DHIS2's Github account</em></a>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can read more on how to <a href="https://help.github.com/en/desktop/contributing-to-projects/creating-an-issue-or-pull-request#creating-a-new-pull-request">create a pull request using Github Desktop</a> and/or <a href="https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests">create a pull request from a fork</a>.</p>
+</div>
+<h4 id="step-10-update-the-doc-portal-when-identified">Step 10 - update the doc portal (when identified)<a class="headerlink" href="#step-10-update-the-doc-portal-when-identified" title="Permanent link">&para;</a></h4>
+<p>When the documentation is merged and if it has been identified that it should be published on the DHIS2 Documentation portal you simply need to create an issue in the DHIS2 Documentation repository and assign it to Phil or Matthieu letting us know that resources should be added.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tools to use</p>
+<p>Tools: The <a href="https://github.com/dhis2/dhis2-docs#structure">DHIS2 Documentation Repository</a>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can read more on how to <a href="https://help.github.com/en/github/managing-your-work-on-github/creating-an-issue">create an issue in a Github repository</a>.</p>
+</div>
+<p>Alternatively, and when suitable, the documentation can be published directly in the area specific documentation repository. More guidance will be provided.</p>
+<h4 id="step-11-12-1-14-15-translate-the-documentation-when-identified">Step 11, 12, 1, 14 &amp; 15 Translate the documentation (when identified)<a class="headerlink" href="#step-11-12-1-14-15-translate-the-documentation-when-identified" title="Permanent link">&para;</a></h4>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This section will be better described.</p>
+</div>
+<p>The documentation produced for specific areas related to DHIS2 such as DHIS2 packages, DHIS2 Academy or DHIS2 Education needs, due to the international footprint of DHIS2, to be translated. The platform to support the translation effort that is integrated with the DHIS2 Documentation and DHIS2 interface is <a href="https://www.transifex.com/hisp-uio/public/"><strong>Transifex</strong></a>.</p>
+<ul>
+<li>
+<p>Any area specific documentation that is integrated in the DHIS2 Documentation portal is by default pushed as a source file to be translated in Transifex to be translated. Every night the target languages are pulled from Transifex to be built and published in the DHIS2. Please create an issue in the DHIS2 Documentation repository and assign it to Phil (@Philip-Larsen-Donnelly) or Matthieu (@mrwine) letting us know that resources should be added.</p>
+</li>
+<li>
+<p>Documents to be translated and that will remain in the area specific documentation repository without being integrated in the DHIS2 Documentation can still be pushed in Transifex to be translated and translation can be pulled back to the repo. Please create an issue in the DHIS2 Documentation repository and assign it to Phil (@Philip-Larsen-Donnelly) or Matthieu (@mrwine) letting us know that resources should be added.</p>
+</li>
+</ul>
+<h2 id="writing-documentation-in-markdown">Writing documentation in Markdown<a class="headerlink" href="#writing-documentation-in-markdown" title="Permanent link">&para;</a></h2>
+<p>This is a focus on the step 5 in our workflow</p>
+<p>As mentioned earlier in these guidelines any <em>written</em> documentation to be produced and shared with the community or a broader audience should be written in <strong>Markdown</strong>. In short and as written by John Gruber, who co-developed this language, "Markdown allows you to write using an easy-to-read, easy-to-write plain text format"<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>. Its design makes it very easy to write, read and convert. It is this simplicity, versatility and the fact that is is widely used to generate static content that pushed us to adopt Markdown.</p>
+<p>As mentioned in the DHIS2 Documentation repository <a href="https://github.com/dhis2/dhis2-docs/blob/master/README.md">README</a> we are following the <a href="https://commonmark.org/help/">commonmark</a> markdown language.</p>
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
+<p>If you are not yet familiar with Markdown, have a look at this <strong><em><a href="https://commonmark.org/help/">cheatsheet</a></em></strong> and spend 10 minutes going through this <strong><em><a href="https://commonmark.org/help/tutorial/">tutorial</a></em></strong> .</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Try to write as many documents as you can using markdown to fasten the learning process and ease the chane. For example, you can write your meeting notes in markdown</p>
+</div>
+<h3 id="create-a-new-document">Create a new document<a class="headerlink" href="#create-a-new-document" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Open your preferred text editor such as VS Code or Typora</li>
+<li>Create a new file and save it in your local repository.</li>
+</ol>
+<h3 id="edit-a-document-already-available-in-repo">Edit a document already available in repo<a class="headerlink" href="#edit-a-document-already-available-in-repo" title="Permanent link">&para;</a></h3>
+<p>This is probably the most straight forward:</p>
+<ol>
+<li>Open the document in your preferred text editor such as VS Code or Typora</li>
+<li>Edit and save</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Remember that you collaborate. This means that other contributors perform changes as well. A best practice is to pull the latest version locally of the repo before starting to edit a document.</p>
+</div>
+<h3 id="convert-a-document-that-we-have-already-created">Convert a document that we have already created<a class="headerlink" href="#convert-a-document-that-we-have-already-created" title="Permanent link">&para;</a></h3>
+<p>A lot of documentation has of course already been created and the purpose of setting up this workflow is to work faster and better. So if some disruption is acceptable as part of the adoption process, we should not lose too much time and spend too many efforts to adapt the content item that are now available and close to be ready to be integrated from Google Drive to Open edX. At the same time, we want to keep in mind that the Markdown files need to be our source files, meaning the files containing the latest available vsersion of the content item. Therefore, we highly recommend to use the add-on <strong><a href="https://gsuite.google.com/marketplace/app/docs_to_markdown/700168918607">Docs to Markdown</a></strong></p>
+<ol>
+<li>Install the add-on following the procedure described in the GSuite Marketplace.</li>
+<li>Open the Google doc you want to convert to Markdown</li>
+<li>In the menu bar, click on <em>'Add-ons'&gt;'Docs to Markdown'&gt; Convert</em></li>
+<li>In the Docs to Markdown pane onth right hand side, click the button <em>'Markdown'</em></li>
+<li>Select the relevant content, basically everything between the <code>&lt;!----- Conversion time ... -----&gt;</code>and <code>&lt;!-- Docs to Markdown version ... --&gt;</code></li>
+<li>Copy the selected content and paste it in a newly created source file in your local repo and save it with the<code>.md</code>extension.</li>
+<li>Check the result of the conversion:</li>
+<li>pay attention to the warnings generated during the conversion</li>
+<li>add the images in the local repository and update the links to match the folder structure</li>
+<li>update the anchors of the headings by replacing the id with the actual heading preceded with a <code>#</code> and in <code>()</code> The heading needs to be transformed a bit and include the words only, in lowercase and with a <code>-</code>between each word. For example <a href="#my-heading-can-be-long-and-even-more">my anchor</a>.</li>
+<li>replace any remaning <code>html</code> tags with <code>markdown</code> language. This specifically applies to tables and images.</li>
+<li>Save your edits</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Extracting images</p>
+<p>To fasten the extraction of images from Google Doc, we suggest that you download the document as a <code>Web page (.html, zipped)</code>. You will find all you images (unamed and uncropped) in one folder.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Converting tables</p>
+<p>To fasten the conversion, you can use online tools such as <a href="https://tableconvert.com/">TableConvert</a> where you can copy/paste the html table and convert into Markdown. Please note that markdown only allows for <a href="https://help.github.com/en/github/writing-on-github/organizing-information-with-tables#creating-a-table">simple tables</a>. If you have complex tables with a lot of styling such as merged cells, lists and paragraphs, you will need to think through and adopt another way to present the information.</p>
+</div>
+<h3 id="suggested-tools">Suggested Tools<a class="headerlink" href="#suggested-tools" title="Permanent link">&para;</a></h3>
+<p>Tools play a key part in the success in the implementation of these guidelines. Plenty of Markdown editors and convertors are available out there. Provided both our current collaborative environment(s9), Google Drive &amp; Github, and 'philosophy' that we want to follow (open-source, cross-platform,efficient &amp; user friendly tools), we would suggest:</p>
+<h4 id="offline-editors">Offline editors<a class="headerlink" href="#offline-editors" title="Permanent link">&para;</a></h4>
+<p>This should be your preferred to either create or edit. Any text editor, can do the job. We strongly recommend that you use one that one which can help with 1) the light styling of Markdown 2) the rendering.</p>
+<ul>
+<li><a href="https://typora.io/">Typora</a> (open source &amp; free), available on Linux, MacOSX and Windows is a nice app, that eases the creation of table and integrates mermaid.js to create diagrams.</li>
+<li><a href="https://code.visualstudio.com/">Visual Studio Code</a>, with the extension <a href="https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced">Markdown Preview Enhanced</a> is another cross-platform tool This one is a bit more tech savvy.</li>
+</ul>
+<h4 id="online-editors">Online editors<a class="headerlink" href="#online-editors" title="Permanent link">&para;</a></h4>
+<p>You may want, especially if you are collaborating using Google Drive, use an online editor. In that regard, the open source <a href="https://stackedit.io/app">StackEdit</a> which is integrated with Google Drive as a 3<sup>rd</sup> party app can be a good option. It has a WYSIWYG interface, which is pretty handy when beginning with Markdown and allows you to open or create Markdown files directly from Google Drive, once added as an app.</p>
+<h4 id="other-markdown-editors">Other Markdown Editors<a class="headerlink" href="#other-markdown-editors" title="Permanent link">&para;</a></h4>
+<p>Below is a list of other Markdown editors worth being looked at</p>
+<ul>
+<li><strong>Offline</strong></li>
+<li>
+<p><a href="https://atom.io/">Atom</a> with the extension <a href="https://atom.io/packages/markdown-preview-enhanced">Markdown Preview Enhanced</a>, works on Linux, Mac and Windows</p>
+</li>
+<li>
+<p><strong>Online editor</strong></p>
+</li>
+<li><a href="https://dillinger.io/">Dillinger</a>, free and somehow integrated with Google Drive</li>
+<li><a href="https://hackmd.io/">HAckMD</a></li>
+</ul>
+<h3 id="standalone-version-of-the-documentation">Standalone version of the documentation<a class="headerlink" href="#standalone-version-of-the-documentation" title="Permanent link">&para;</a></h3>
+<p>In some contexts sharing standalone versions of the documentation is mandatory. The worflow needs to be described. We can already mention though that we recommand to Pandod to generate PDF, docx, pptx versions of the documentation. Feel free to reach us for support.</p>
+<h4 id="a-next-step-slides-towards-a-more-automatised-workflow">A next step - slides, towards a more automatised workflow<a class="headerlink" href="#a-next-step-slides-towards-a-more-automatised-workflow" title="Permanent link">&para;</a></h4>
+<p>I am testing tools to use Markdown to create slides and this looks promising. If it is successful this would be a tremendous way forward in terms of integration especially to the translation workflow. More to come...</p>
+<h2 id="extra-resources">Extra resources<a class="headerlink" href="#extra-resources" title="Permanent link">&para;</a></h2>
+<h3 id="git-and-github">GIT and Github<a class="headerlink" href="#git-and-github" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://git-scm.com/doc">GIT Documentation</a></li>
+<li><a href="https://help.github.com/en/github">Github Documentation</a></li>
+</ul>
+<h3 id="markdown">Markdown<a class="headerlink" href="#markdown" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://commonmark.org/help/">Commonmark Cheatsheet</a></li>
+</ul>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>using <a href="https://mermaid-js.github.io/mermaid/#/sequenceDiagram">mermaid.js</a>, which is integrated in Typora as well as in Atom and Visual Studio Code with the mardown extension <a href="https://shd101wyy.github.io/markdown-preview-enhanced/#/">Markdown Preview Enhanced</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p><a href="https://daringfireball.net/projects/markdown/">source: https://daringfireball.net/projects/markdown/</a>&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+                
+                  
+                    
+
+<hr>
+<div class="md-source-date">
+  <small>
+    
+      Last update: June 3, 2020
+    
+  </small>
+</div>
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+        
+          <a href="en/workflow-dhis2-doc.html" title="Suggested workflow" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Suggested workflow
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy;2020 DHIS2 Team
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="https://github.com/dhis2" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://twitter.com/dhis2" target="_blank" rel="noopener" title="twitter.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
+      <a href="https://linkedin.com/in/dhis2" target="_blank" rel="noopener" title="linkedin.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="assets/javascripts/vendor.d710d30a.min.js"></script>
+      <script src="assets/javascripts/bundle.5f27aba8.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: ".",
+          features: [],
+          search: Object.assign({
+            worker: "assets/javascripts/worker/search.27c6a5e6.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
