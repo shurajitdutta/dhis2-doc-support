@@ -54,50 +54,7 @@ So, we want to implement of a solution that strengthen our documentation process
 
 The following sequence diagram [^1] illustrates in a simplified way how collaborators should contribute to a specific area documentation such as DHIS2 COVID19 Documentation or DHIS2 Android App.
 
-```mermaid
-sequenceDiagram
-    autonumber
-    participant A as docs.dhis2.org
-    participant B as Area specific documentation Repo
-    participant C as Contributor Repo
-    participant D as Contributor's Machine
-    participant E as Transifex
-    Note over B: Contributor wants to contribute
-    alt fork
-      B->>C: creates a fork
-    else create a new repo
-      B->>C: creates a repo from template
-    end
-    C->>D: clones the repo
-    loop repeats for each commit
-      Note over D: Contributor starts to contribute
-      activate D
-        D->>D: creates a branch
-        D->>D: creates or edits a document
-      deactivate D
-      Note over D: Contributor wants to share
-      D->>D: stages the contribution
-      D->>C: pushes the contribution
-      C->>C: merges to master branch
-      C->>B: create a Pull request to merge
-      opt when identified
-        A->>A: create an issue for publication
-      end
-    end
-    opt when identified
-      alt if kept as a standalone documentation project
-        B->>E: updates related project for translation
-      else if integrated to docs.dhis2.org
-        A->>E: updates related project for translation
-      end
-      E->>E: translates strings
-      alt if kept as a standalone documentation project
-        E-->>B: pulls translated strings
-      else if integrated to docs.dhis2.org
-        E-->>A: pulls translated strings
-      end
-    end
-```
+![workflow](en/resources/images/workflow.jpg)
 
 ### Detailed workflow
 
@@ -108,31 +65,26 @@ Below you will find a step-by-step. May you be unfamiliar with Github, we recomm
 1. Create an account on [Github.com][github home]
 1. Install the [Github Deskop client][client] on your machine. Alternatively, and if you feel confident enough, you can use command line and refer to [Github help][install git] for guidance.
 
-> **Important**
->
-> May you not be with confortable with command line, we highly recommand that you use the [Github Deskop client][client] to handle the Github workflow.
+!!! Warning "Important"
+    May you not be with confortable with command line, we highly recommand that you use the [Github Deskop client][client] to handle the Github workflow.
 
 #### Step 1, 2 & 3 - Set up a working copy on your computer
 
 1. Fork the repo available on [DHIS2's Github account][dhis2 on github] you want to contribute to. This will allow you to quietly work with your own version of the project, without being impacted by the other collaborators' work. In the event that you need to create a new repository that will be added to the documentation workflow, we suggest that you use our [template repository][template repo].
 1. Clone the forked/created from template repository to have it on your local machine and be able to perform any contribution you want to, such as creating a new markdown document or editing a current one.
 
-> **Tip**
->
-> Tools: a Git client such as *Github Desktop*.
+!!! Tip "Tools to use"
+    A Git client such as *Github Desktop*.
 
-> **Note**
->
-> You can read more on how to [clone and fork repositories using GitHub Desktop][clone fork desktop].
->
-> May you want to have more detailed info, or if you deceided you use command line, you can read more on:
->
-> * [forking a repository][fork] and [Creating a repository from a template][template];
-> * [cloning a repository][clone].
+!!! Note
+    You can read more on how to [clone and fork repositories using GitHub Desktop][clone fork desktop].
+    May you want to have more detailed info, or if you deceided you use command line, you can read more on:
 
-> **Note**
->
-> the template repository follows the structure described in the [dhis2-docs repo][dhis2-docs repo], therefore eases the integration with teh DHIS2 Documentation.
+    * [forking a repository][fork] and [Creating a repository from a template][template];
+    * [cloning a repository][clone].
+
+!!! Note
+    The template repository follows the structure described in the [dhis2-docs repo][dhis2-docs repo], therefore eases the integration with teh DHIS2 Documentation.
 
 #### Step 4 & 5 - Create a branch and start writing
 
@@ -140,37 +92,31 @@ Below you will find a step-by-step. May you be unfamiliar with Github, we recomm
 1. Create and/or edit your document using Markdown as language.
 1. Save your edits in your local repository.
 
-> **Tip**
->
-> Tools: a Git client such as *Github Desktop* to create a banch and a text editor such as *Typora* to work o the document and save it.
+!!! Tip "Tools to use"
+    A Git client such as *Github Desktop* to create a banch and a text editor such as *Typora* to work o the document and save it.
 
-> **Note**
->
-> You can read more on how to [create a branch using Github Desktop][branch desktop].
+!!! Note
+    You can read more on how to [create a branch using Github Desktop][branch desktop].
 
 #### Step 6 - Stage the changes
 
 A best practice consists in preparing and checking and probably more importantly choosing the changes you want to commit, especially of you have done a lot of them in various files.
 
-> **Tip**
->
-> Tools: a Git client such as *Github Desktop*.
+!!! Tip "Tools to use"
+    A Git client such as *Github Desktop*.
 
-> **Note**
->
-> You can read more on how to [Select changes to include in a commit using Github Desktop][select change].
+!!! Note
+    You can read more on how to [Select changes to include in a commit using Github Desktop][select change].
 
 #### Step 7 - Push to your Github repository
 
 Once you have chosen all the changes you want to commit, it is time to push them and make them available on the Github repository you have created in [Step 1][step1]. Remember to write a commit message to help other contributors and possible reviewers to understand what you have changed.
 
-> **Tip**
->
-> Tools: a Git client such as *Github Desktop*.
+!!! Tip "Tools to use"
+    A Git client such as *Github Desktop*.
 
-> **Note**
->
-> You can read more on how to [write a commit message and push your changes using Github Desktop][commit push desktop].
+!!! Note
+    You can read more on how to [write a commit message and push your changes using Github Desktop][commit push desktop].
 
 #### Step 8 & 9 - Pull request & update of the fork and the area specific documentation repositories
 
@@ -178,33 +124,28 @@ The changes you have made are now available in your fork. You want to integrate 
 
 When the master branch of your repo includes all the changes you wanted to have, meaning when you have approved the pull request mentioned above, and in order to share and publish these changes with your target audience, you need to create a pull request to the area specific documentation repository.
 
-> **Tip**
->
-> Tools: a Git client such as *Github Desktop* and [*DHIS2's Github account*][dhis2 on github].
+!!! Tip "Tools to use"
+    Tools: a Git client such as *Github Desktop* and [*DHIS2's Github account*][dhis2 on github].
 
-> **Note**
->
-> You can read more on how to [create a pull request using Github Desktop][pr from desktop] and/or [create a pull request from a fork][pr from fork].
+!!! Note
+    You can read more on how to [create a pull request using Github Desktop][pr from desktop] and/or [create a pull request from a fork][pr from fork].
 
 #### Step 10 - update the doc portal (when identified)
 
 When the documentation is merged and if it has been identified that it should be published on the DHIS2 Documentation portal you simply need to create an issue in the DHIS2 Documentation repository and assign it to Phil or Matthieu letting us know that resources should be added.
 
-> **Tips**
->
-> Tools: The [DHIS2 Documentation Repository][dhis2-docs repo].
+!!! Tip "Tools to use"
+    Tools: The [DHIS2 Documentation Repository][dhis2-docs repo].
 
-> **Note**
->
-> You can read more on how to [create an issue in a Github repository][create issue].
+!!! Note
+    You can read more on how to [create an issue in a Github repository][create issue].
 
 Alternatively, and when suitable, the documentation can be published directly in the area specific documentation repository. More guidance will be provided.
 
 #### Step 11, 12, 1, 14 & 15 Translate the documentation (when identified)
 
-> **Note**
->
-> This section will be better described.
+!!! Note
+    This section will be better described.
 
 The documentation produced for specific areas related to DHIS2 such as DHIS2 packages, DHIS2 Academy or DHIS2 Education needs, due to the international footprint of DHIS2, to be translated. The platform to support the translation effort that is integrated with the DHIS2 Documentation and DHIS2 interface is [**Transifex**][transifex hisp].
 
@@ -220,14 +161,11 @@ As mentioned earlier in these guidelines any *written* documentation to be produ
 
 As mentioned in the DHIS2 Documentation repository [README](https://github.com/dhis2/dhis2-docs/blob/master/README.md) we are following the [commonmark](https://commonmark.org/help/) markdown language.
 
-> ***Important***
->
-> If you are not yet familiar with Markdown, have a look at this ***[cheatsheet][md cheatsheet]*** and spend 10 minutes going through this ***[tutorial][tutorial]*** .
+!!! Warning "Important"
+    If you are not yet familiar with Markdown, have a look at this ***[cheatsheet][md cheatsheet]*** and spend 10 minutes going through this ***[tutorial][tutorial]*** .
 
-> **Tip**
->
-> Try to write as many documents as you can using markdown to fasten the learning process and ease the chane. For example, you can write your meeting notes in markdown
-Let's unfold these key steps.
+!!! Tip
+    Try to write as many documents as you can using markdown to fasten the learning process and ease the chane. For example, you can write your meeting notes in markdown
 
 ### Create a new document
 
@@ -241,9 +179,8 @@ This is probably the most straight forward:
 1. Open the document in your preferred text editor such as VS Code or Typora
 1. Edit and save
 
-> **Tip**
->
-> Remember that you collaborate. This means that other contributors perform changes as well. A best practice is to pull the latest version locally of the repo before starting to edit a document.
+!!! Tip
+    Remember that you collaborate. This means that other contributors perform changes as well. A best practice is to pull the latest version locally of the repo before starting to edit a document.
 
 ### Convert a document that we have already created
 
@@ -262,13 +199,11 @@ A lot of documentation has of course already been created and the purpose of set
    * replace any remaning `html` tags with `markdown` language. This specifically applies to tables and images.
 1. Save your edits
 
-> **Tip**
->
->*Images*: To fasten the extraction of images from Google Doc, we suggest that you download the document as a `Web page (.html, zipped)`. You will find all you images (unamed and uncropped) in one folder.
+!!! Tip "Extracting images"
+    To fasten the extraction of images from Google Doc, we suggest that you download the document as a `Web page (.html, zipped)`. You will find all you images (unamed and uncropped) in one folder.
 
-> **Tip**
->
-> *Tables*: to fasten the conversion, you can use online tools such as [TableConvert][tableconvert] where you can copy/paste the html table and convert into Markdown. Please note that markdown only allows for [simple tables][gmf table]. If you have complex tables with a lot of styling such as merged cells, lists and paragraphs, you will need to think through and adopt another way to present the information.
+!!! Tip "Converting tables"
+    To fasten the conversion, you can use online tools such as [TableConvert][tableconvert] where you can copy/paste the html table and convert into Markdown. Please note that markdown only allows for [simple tables][gmf table]. If you have complex tables with a lot of styling such as merged cells, lists and paragraphs, you will need to think through and adopt another way to present the information.
 
 ### Suggested Tools
 
@@ -316,7 +251,7 @@ I am testing tools to use Markdown to create slides and this looks promising. If
 * [Commonmark Cheatsheet][commonmark help]
 
 [^1]: using [mermaid.js][sequence diagram], which is integrated in Typora as well as in Atom and Visual Studio Code with the mardown extension [Markdown Preview Enhanced][mpe]
-[^2]: source: https://daringfireball.net/projects/markdown/
+[^2]: [source: https://daringfireball.net/projects/markdown/](https://daringfireball.net/projects/markdown/)
 
 [why markdown]: https://medium.com/@stymied/why-you-should-and-should-not-use-markdown-1b9d70987792%20carly%20comando
 [slides]: https://medium.com/@stymied/what-slides-from-markdown-5239ed31e7ac
