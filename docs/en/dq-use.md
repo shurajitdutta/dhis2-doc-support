@@ -8,8 +8,6 @@
 
 **Contents**
 
-* [How to use and interpret WHO’s Data Quality Tool](#how-to-use-and-interpret-whos-data-quality-tool)
-* [Contents](#contents)
 * [Launch the Tool](#launch-the-tool)
 * [Use the Completeness dashboard](#use-the-completeness-dashboard)
 * [Use the “Consistency-time” dashboard](#use-the-consistency-time-dashboard)
