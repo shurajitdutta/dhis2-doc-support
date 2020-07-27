@@ -39,13 +39,13 @@
 2. Type “WHO” on the search apps line in the upper right of the DHIS2 Home page. Click on **WHO Data Quality Tool**.
 
         
-    ![alt_text](images/image001.png "image_tooltip")
+    ![alt_text](resources/images/dqinfo/image001.png "image_tooltip")
 
 
 3. **Quickly review the main menu of the DQ Tool**: After you launch the DQ Tool, you will see the 5 tabs at the top of the page. These are used to select between several different functionalities. Notice that the word “Dashboard” is highlighted and the Dashboard function is selected by default.
 
         
-     ![alt_text](images/image002.png "image_tooltip")
+     ![alt_text](resources/images/dqinfo/image002.png "image_tooltip")
 
 
 
@@ -53,7 +53,7 @@
 
 
 
-   ![alt_text](images/image003.png "image_tooltip")
+   ![alt_text](resources/images/dqinfo/image003.png "image_tooltip")
 
 
 
@@ -65,28 +65,28 @@
 > For the training instance of DHIS2, the immunization dataset is quite incomplete.  It is best to review the quality of the ANC data which are more complete.
 
 
-   ![alt_text](images/image004.png "image_tooltip")
+   ![alt_text](resources/images/dqinfo/image004.png "image_tooltip")
 
    
    **a. Review the graphs on the left side of the page:** The graphs on the left show, for each dataset, the completeness and timeliness by month for each of the last 12 months.
-   ![alt_text](images/image005.png "image_tooltip")
+   ![alt_text](resources/images/dqinfo/image005.png "image_tooltip")
 
 
 
 
-   **b. Review the graphs on the right side of the page:** The graphs on the right show, for each dataset, the completeness by Region <span style="text-decoration:underline;">for the last month</span> of the period being analyzed. Note:  with this instance of DHIS2, the country is divided into 4 regions and each region is divided into multiple districts. Completeness for the most recent month is actually a measure of timeliness.  It is often more revealing to show completeness for the month before last.  Click on the menu icon.![alt_text](images/image006.png "image_tooltip")In the upper right of the screen to show a menu on the right of the screen.  The reporting period that is charted can be changed by clicking on a different month.   _<span style="text-decoration:underline;">After you have experimented with changing the month, reset it to April of this year.</span>_
+   **b. Review the graphs on the right side of the page:** The graphs on the right show, for each dataset, the completeness by Region <span style="text-decoration:underline;">for the last month</span> of the period being analyzed. Note:  with this instance of DHIS2, the country is divided into 4 regions and each region is divided into multiple districts. Completeness for the most recent month is actually a measure of timeliness.  It is often more revealing to show completeness for the month before last.  Click on the menu icon.![alt_text](resources/images/dqinfo/image006.png "image_tooltip")In the upper right of the screen to show a menu on the right of the screen.  The reporting period that is charted can be changed by clicking on a different month.   _<span style="text-decoration:underline;">After you have experimented with changing the month, reset it to April of this year.</span>_
    
 
    **c. Change the “Organisation unit” that is being analyzed:** By default, the DQ Tool analyzes all data nationwide, disaggregated by Region.  The DQ Tool can also be used at district level with data disaggregated by individual health facility.  In the Organisaton unit section of the menu, click on **Other** and select “District D” of Region A.  The graphs on the left side of the completeness page now show the 12 month trend in the reporting completeness of District D.  By default, the graphs on the right side of the completeness page show results disaggregated for one level below – facility.
     **Question**:  Which individual facilities have not yet reported ANC data for last month? For 3 months ago? For 6 months ago?  _<span style="text-decoration:underline;">After you have experimented with changing the organization unit and the month, reset it national with **disaggregation by District** and period = April of this year</span>_[^1]_<span style="text-decoration:underline;">.</span>_
 
-![alt_text](images/image007.png "image_tooltip")
+![alt_text](resources/images/dqinfo/image007.png "image_tooltip")
 
 # Use the “Consistency-time” dashboard
 
 6. **Review the Consistency-time dashboard**: Click on the tab for “Consistency-time”.  Scroll down and review the page.  Move the cursor around on each chart to view the pop-up details.
 
-![alt_text](images/image008.png "image_tooltip")
+![alt_text](resources/images/dqinfo/image008.png "image_tooltip")
 
   a. **Review the graphs on the left   side of the page:** The graphs on the left show, for each core numerator, the trend in the numerator value over the period 1 to 12 months previously (dark blue in the above chart), the period 13 to 24 months previously (light blue in the above chart) and the period 25 to 36 months previously (orange in the above chart).  Note the sharp rise in the value of ANC 1 in May 2018 and again in January 2019.   When there is such a dramatic rise at national level, this is certainly suspicious.
 
@@ -94,7 +94,7 @@
 
   b. **Review the graphs on the right side of the page:** Each graph on the right is an example of "scatter plot".  When the Tool is set to disaggregated by District, each dot represents the value for a single district.  On this chart, the position of the dot on the vertical axis represents the value of the numerator for the month selected (remember that we re-set the menu to show results for Period = April 2020).  The position of the dot on the horizontal axis is the average value in the same district over the 11 previous month. Dots that appear above the lower grey line or above the upper grey line are suspicious (e.g. in the example below, the number of ANC 1<sup>st</sup> visits in District F was 1,425 in April 2020 as compared to an average of 4,596 / month from May 2019 to March 2020.
 
-  ![alt_text](images/image009.png "image_tooltip")
+  ![alt_text](resources/images/dqinfo/image009.png "image_tooltip")
 
 
 Hence, the "Completeness-time dashboard" may be useful to identify some suspicious values.  However, other components of the Tool do a better job of identifying suspicious values. So this page of the Tool is not used as frequently as others[^2].
@@ -118,12 +118,12 @@ Hence, the "Completeness-time dashboard" may be useful to identify some suspicio
 
     a. **Review any scatterplots:** The graph comparing ANC 1 to ANC 4 is a scatterplot with each dot representing the total values, over the last 12 months, for one district.  Districts with values that fall outside of the grey threshold lines are represented with a diamond shape.  As one example, for District F (represented by the enlarged diamond), over the last 12 months, ANC 4 was only 2,641 while ANC 1 was 51,976.  The discrepancy is suspicious and should be investigated.
 
-    ![alt_text](images/image010.png "image_tooltip")
+    ![alt_text](resources/images/dqinfo/image010.png "image_tooltip")
 
 
     b. **Review any graphs assessing dropout rates:** The graph comparing DPT1 to DPT3 assesses for any “negative dropout rate”.  The graph shows that there are 5 districts which, over the 12 months up to and including April 2020, had a negative DPT 1 to DPT 3 dropout rate.  In other words, these 5 districts reported a higher value of DPT 3 than DPT 1.  A negative DPT dropout rate for a district for an entire year is usually a sign of poor data quality.  This should be investigated.
 
-    ![alt_text](images/image011.png "image_tooltip")
+    ![alt_text](resources/images/dqinfo/image011.png "image_tooltip")
 
 
 # Use the “Outliers” dashboard
@@ -133,7 +133,7 @@ Hence, the "Completeness-time dashboard" may be useful to identify some suspicio
 There are so many rows that the table will not fit on a single page.  You can view the subsequent pages by clicking on the controls at the bottom of the page.
 
 
-    ![alt_text](images/image012.png "image_tooltip")
+    ![alt_text](resources/images/dqinfo/image012.png "image_tooltip")
 
 
 
@@ -145,25 +145,25 @@ There are so many rows that the table will not fit on a single page.  You can vi
 
     b. **Investigate outliers with an extreme Z-score**. There is another way to identify the outliers which are most suspicious by using their “Z-score”[^5]. To use this method, click on the Options button to open the Options window. To see the Z-score for each row, click on the box “Include Z-score”.  Review the Standard Z-score values in the Result table.  Notice that the values range from less than 2 to more than 3.  Next, click on the following buttons: 1) Outliers; 2) Standard Score; and 3) Extreme.  If the Result table has no rows at all or only 1 or 2 rows, click on “Modified Z-Score”[^6] to identify more outliers.
 
-    ![alt_text](images/image013.png "image_tooltip")
+    ![alt_text](resources/images/dqinfo/image013.png "image_tooltip")
 
 
     c. **Inspect each row**– **Questions**:  Review the Standard Z-scores.  Notice how the Result table reduces to only a few rows. Notice that the Z-score for each row is greater than 3.0.  Do you think _these_ suspicious value might be due to an error? How would you investigate to determine whether a highlighted value is due to an error? Click on the menu icon at the end of the first row and select “Visualize” from the drop-down menu.
     
     
-    ![alt_text](images/image014.png "image_tooltip")
+    ![alt_text](resources/images/dqinfo/image014.png "image_tooltip")
 
 
     d. **“Drill down” to investigate the source of the suspicious value** – Click on the Close button to close the graph, click again on the menu icon and select “Drill down” from the drop-down menu.  If necessary, again use the Options feature to filter the table to Outliers, Standard Score and Extreme.  Do you think _these_ suspicious value might be due to an error? Very large extreme outliers such as the one in the first row are very likely to be due to errors. Extreme outliers which are much less than the average monthly value, such as the one seen in the second row, may be due to missing data if they are seen at district or higher level.  A small but extreme outlier seen at facility level is also likely to be due to an error.
 
 
-    ![alt_text](images/image015.png "image_tooltip")
+    ![alt_text](resources/images/dqinfo/image015.png "image_tooltip")
 
 
     If there is another level of the organizational hierarchy below this level, you can drill down further. If, however, this is the lowest level in the hierarchy then you get a message such as the following:
 
 
-    ![alt_text](images/image016.png "image_tooltip")
+    ![alt_text](resources/images/dqinfo/image016.png "image_tooltip")
 
 
 
@@ -171,11 +171,11 @@ There are so many rows that the table will not fit on a single page.  You can vi
 
 
 
-    ![alt_text](images/image017.png "image_tooltip")
+    ![alt_text](resources/images/dqinfo/image017.png "image_tooltip")
 
 
 
-    ![alt_text](images/image018.png "image_tooltip")
+    ![alt_text](resources/images/dqinfo/image018.png "image_tooltip")
 
 
  
@@ -191,7 +191,7 @@ There are so many rows that the table will not fit on a single page.  You can vi
 
    * Click on the Analysis tab at the top of the page, then select Consistency.
 
-   ![alt_text](images/image019.png "image_tooltip")
+   ![alt_text](resources/images/dqinfo/image019.png "image_tooltip")
 
 A window appears which allows you to configure a customized assessment of consistency-over-time or consistency between related numerators.  By default, consistency “Between Indicators” (between related numerators) is selected and Compare organization units to “Overall result” is selected. With this setting, A = B, A > B and Dropout cannot be selected[^8]. Leave “Consistency analysis type” set to “Between Indicators” but click on “Expected result” and select “Dropout” (see figure).
 
@@ -202,11 +202,11 @@ A window appears which allows you to configure a customized assessment of consis
   *   Click on Period to customize the period as shown in the figure – set to last year.
 
 
-![alt_text](images/image021.png "image_tooltip")
+![alt_text](resources/images/dqinfo/image021.png "image_tooltip")
 
 * Click on Organisation unit and set disaggregation to District. 
 
-  ![alt_text](images/image022.png "image_tooltip")
+  ![alt_text](resources/images/dqinfo/image022.png "image_tooltip")
 
 Click on the blue Analyze button in the lower right of the page and the results will appear.Note the following:
  
@@ -215,43 +215,43 @@ Click on the blue Analyze button in the lower right of the page and the results 
  2. The table on the right side of the page has a row for the entire country followed by one row for each district.  The districts are sorted according to their dropout rates.  The 6 districts with negative dropout rate are at the top of this list.  The rows continue on two more pages but it is less important to view these other pages because the dropout rates are all positive.
 
  
-    ![alt_text](images/image023.png "image_tooltip")
+    ![alt_text](resources/images/dqinfo/image023.png "image_tooltip")
 
  3. If you click on any row, the color of the row changes to pale yellow and a one row table and another chart appear at the bottom of the page.  The chart shows you the results by month.  In this example, DPT 3 was greater than DPT1 during 7 of the 12 months of last year.  Thus the negative dropout rate is not just the result of a single outlier – at least for 2019 for District G there was a recurrent problem. 
 
 
-    ![alt_text](images/image024.png "image_tooltip")
+    ![alt_text](resources/images/dqinfo/image024.png "image_tooltip")
 
 
  4. You can click on the menu icon at the end of this single row to “drill down” and see the results dis-aggregated to a level below.  The chart shows that the negative dropout rate is not just the result of data reported by a single health facility – 11 out of 18 health facilities in district G reported more a higher DPT 3 than DPT 1 in 2018. Conclusion: District G appears to have a problem with systematic over-reporting of DPT 3.  The problem affected reporting by multiple health facilities and for multiple months.  This may be due to a tendency of health facilities in district G misclassifying first doses of DPT as third doses of DPT.
 
-![alt_text](images/image025.png "image_tooltip")
+![alt_text](resources/images/dqinfo/image025.png "image_tooltip")
 
 
 12.  **Use the “Analysis – Consistency” function to identify all facility values which warrant investigation**
 
   *   Set Analysis Type as shown in the figure: Consistency analysis type = “Over Time”; Compare organization units to = “Expected result”; Expected trend = “Constant”; Criteria = 0%. 
 
-  ![alt_text](images/image026.png "image_tooltip")
+  ![alt_text](resources/images/dqinfo/image026.png "image_tooltip")
 
   *   Click on Data and select a single data element or indicator.  For example, select “Penta 3 doses given (HMIS)” in the data element group “HMIS” 
 
-  ![alt_text](images/image027.png "image_tooltip")
+  ![alt_text](resources/images/dqinfo/image027.png "image_tooltip")
   
   *   Click on Period to customize the period as shown in the figure.  With these settings, the value for February 2020 will be compared to the values for the preceding 12 months.
 
-  ![alt_text](images/image028.png "image_tooltip")
+  ![alt_text](resources/images/dqinfo/image028.png "image_tooltip")
 
   *   Click on Orgunit, select a specific district and set disaggregation to Facility.
 
-  ![alt_text](images/image029.png "image_tooltip")
+  ![alt_text](resources/images/dqinfo/image029.png "image_tooltip")
 
  With these settings, the Penta 3 values for February 2020 for all health facilities in District E will be compared to the average values reported by these same facilities during the preceding 12 months.
 
 
   *   Click on “Analyze and wait for the chart to appear.
 
-  ![alt_text](images/image030.png "image_tooltip")
+  ![alt_text](resources/images/dqinfo/image030.png "image_tooltip")
 
 
 How do we interpret this chart?
@@ -267,13 +267,13 @@ How do we interpret this chart?
 
 As a first step of our investigation we can click on each row.  The selected row turns yellow and a chart appears at the bottom of the DHIS2 screen.
 
-![alt_text](images/image031.png "image_tooltip")
+![alt_text](resources/images/dqinfo/image031.png "image_tooltip")
 
 The chart shows us how different the February 2020 value for Facility 567 is from the values reported previously.  This is probably due to erroneous data.  How could we use DHIS2 to investigate further?  What more could you do to investigate this value?
 `
 Here is what we find when we click on the row for Facility 222.
 
-![alt_text](images/image032.png "image_tooltip")
+![alt_text](resources/images/dqinfo/image032.png "image_tooltip")
 
 Notice not only that the value is missing for February 2020, but there is a suspiciously high value for May of 2019.  This illustrates how this analysis can not only identify extreme outliers for the month we have selected for review (February 2020) but it can sometimes identify outliers from previous months (if the outlier is so large that it increases the 12 month average by a large amount).
 
@@ -284,15 +284,15 @@ Notice not only that the value is missing for February 2020, but there is a susp
 
 13. **Review the Outliers and missing data function:** Click on the Analysis tab at the top of the page, then select “Outliers and missing data”.  The Analysis-Outliers function works exactly the same way as the Outliers dashboard.  The advantage that it has over the dashboard is that it is much more flexible.  You can configure it to assess <span style="text-decoration:underline;">any</span> data element or indicator[^9] – not just the data elements/indicators for which the dashboard of the DQ Tool has been configured. In fact, you can configure it to simultaneously assess any _combination_ of data elements and indicators you want.  You could even choose to simultaneously assess all data elements or indicators in a data set, data element group and/or indicator group.
 
-    ![alt_text](images/image033.png "image_period")
+    ![alt_text](resources/images/dqinfo/image033.png "image_period")
 
 You can also use it to assess data over any period.
 
-![alt_text](images/image034.png "image_calender")
+![alt_text](resources/images/dqinfo/image034.png "image_calender")
 
 … and for any grouping of health facilities.[^10]
 
-![alt_text](images/image035.png "image_selectou")
+![alt_text](resources/images/dqinfo/image035.png "image_selectou")
 
 # Exercise 1: Use the dashboard and the analysis functions to identify suspicious values with your DHIS2
 
@@ -330,11 +330,11 @@ You can also use it to assess data over any period.
 
     c. **Use Analysis-Consistency to assess DPT dropout rates**: Click on the Analysis tab then select “Consistency” from the drop-down menu.  Under Analysis Type, click on each of the following: “Between Indicators”, “Expected result” and Dropout”.
 
-    ![alt_text](images/image036.png "image_selectou")
+    ![alt_text](resources/images/dqinfo/image036.png "image_selectou")
 
     Open the Data window then configure it as shown in the figure to the right.  Note: With your DHIS2, DPT 1 &lt; 1 year (or Penta 1  &lt; 1 year) and DPT 3 &lt; 1 year (or Penta 3 &lt; 1 year) may be data elements rather than indicators.
 
-    ![alt_text](images/image037.png "image_selectou")
+    ![alt_text](resources/images/dqinfo/image037.png "image_selectou")
 
 
     Open the Period window and set it to year = 2019.  
@@ -347,24 +347,24 @@ You can also use it to assess data over any period.
      
       **Questions**: Which district has the most negative dropout rate?  Find it in the chart and find it in the table.  For that district, during 2019, what was the value of DPT 1 and what was the value of DPT 3 (see table)? 
 
-     ![alt_text](images/image038.png "image_selectou")
+     ![alt_text](resources/images/dqinfo/image038.png "image_selectou")
 
      ii. Click on the row of the table for the district with the most negative dropout rate. A new table and chart should appear at the bottom of the page.  
      
      **Question**: Is the negative dropout rate due to a value for a single month or is it due to values for multiple months?
 
-      ![alt_text](images/image039.png "image_selectou")
+      ![alt_text](resources/images/dqinfo/image039.png "image_selectou")
 
      iii. Click on the menu icon at the right end of the small table and select “Drill down” (due to a bug in the Tool, the words may not all show on the screen).  A new chart and table should appear showing the dropout rates for 2019 for each org sub-unit (for example, each health facility if they are immediately beneath district in the organizational hierarchy).
      
       **Questions**: For the district which you have selected, is the negative dropout rate due to a value from a single facility or is it due to values from multiple facilities?  Does it appear that the district you have selected has a systematic problem with over-reporting of DPT 3 – for multiple months and multiple sub-districts?  How do you explain this?
 
-    ![alt_text](images/image040.png "image_selectou")
+    ![alt_text](resources/images/dqinfo/image040.png "image_selectou")
 
 
 16. **Use the “Outliers” dashboard to Identify important outliers**-- Click on the tab for the “Outliers” dashboard. Review the menu window to confirm that Disaggregation is set to District. Click on the menu icon to hide the menu window and free up space on the screen. Click on the Options button then check the box for “Include Z-score” and click on “Outliers”, “Standard Score” and “Extreme”.  If the “Result” table has no rows or only 1 row, click on “Modified Z-score”.
 
-    ![alt_text](images/image041.png "image_selectou")
+    ![alt_text](resources/images/dqinfo/image041.png "image_selectou")
 
 
      Click on the menu icon at the end of the first row of the table and select “Visualize”.  Review the graph.  **Question**:  Do you think this extreme outlier is due to an error in the data?  After you have finished viewing the graph, click “Close”.  
@@ -375,7 +375,7 @@ You can also use it to assess data over any period.
 
     Click on the tab for Analysis, then select “Outliers and Missing Data”. Select a data element or indicator of your choice.  Then set Period to 2019 and set Orgunit to national with Disaggregation by district. Click on Analyze then proceed to use the Tool to identify extreme outliers using the same steps as with the Outliers dashboard. 
 
-    ![alt_text](images/image042.png "image_selectou")
+    ![alt_text](resources/images/dqinfo/image042.png "image_selectou")
 
 # Exercise 2: Discuss how to deal with very suspicious values
 
@@ -393,7 +393,7 @@ You can also use it to assess data over any period.
 
      Go to the menu at the top of the DQ Tool and click on the Annual Report.  Use the drop down menu to select “[Core]” under <span style="text-decoration:underline;">Data – Group</span>.  Under Period, select the last calendar year, then specify the number of years for which you have at least one data set with completeness greater than 50%. Ideally this would be 2 or 3 years[^12].  Under <span style="text-decoration:underline;">Organization unit</span> set<span style="text-decoration:underline;"> Disaggregation </span>to the equivalent of district.  It is not recommended that you leave Disaggregation set to the equivalent of Region (e.g. Province), because the Annual Report will then fail to identify many important data quality problems. Click on “Generate” to view the report. 
 
-       ![alt_text](images/image043.png "image_selectou")
+       ![alt_text](resources/images/dqinfo/image043.png "image_selectou")
 
 
 22. **Quickly review the SUMMARY of the Annual Report:**  
@@ -404,7 +404,7 @@ You can also use it to assess data over any period.
      
      The detailed report begins about 1/3<sup>rd</sup> of the way through the Annual Report.
 
-     ![alt_text](images/image044.png "image_selectou") 
+     ![alt_text](resources/images/dqinfo/image044.png "image_selectou") 
 
     
 
@@ -423,13 +423,13 @@ You can also use it to assess data over any period.
 
     **Questions**:  1) For which datasets can robust analysis of 2019 data be performed?  2) To assess for trend from 2018 to 2019, should the ANC data be adjusted for a change in completeness?
 
-    ![alt_text](images/image045.png "image_selectou")
+    ![alt_text](resources/images/dqinfo/image045.png "image_selectou")
 
 26. **Review table 2a: Extreme outliers:** 
 
     The table shows the Threshold for an extreme outlier - A monthly value that is more than 3 SD (standard deviations) from the mean monthly value for the period being review.  The table cites an “Overall score (%)”.  This is the percentage of reports expected during the year (12 times the number of facilities that are expected to report) for which the value of the indicator was an extreme outlier. The “Number” is the number of districts and the “Percent” is the % of districts which, during 2019, reported an extreme outlier for the indicator.
 
-    ![alt_text](images/image046.png "image_selectou")
+    ![alt_text](resources/images/dqinfo/image046.png "image_selectou")
 
 27. **Review 2d:  Consistency of indicator values over time**:
 
@@ -440,7 +440,7 @@ You can also use it to assess data over any period.
     Each dot represents the data from one district.  The position of the dot on the vertical axis is the number of 1<sup>st</sup> ANC visits reported by the district in 2019.  Notice from the small graph in the lower left corner that there has been a nationwide increase in reporting of ANC 1<sup>st</sup> visits (mostly due to an increase in completeness of reporting).  Hence, we don’t expect the 2019 value to be equal to the 2018 value.  The “Overall score” of 125% indicates that the 2019 nationwide total value of ANC 1 was 125% of the value for the preceding year. The difference between the 2018 value and the 2019 value is also reflected in the slope of the black line which represents the national relationship (e.g. when the black line crosses 60,000 on the horizontal axis, it is at roughly 67,000 on the vertical axis).  The grey lines show +/- 15% from the national ratio.  The dots that fall outside of the grey lines have a different shape because they have suspicious values.  For example, District C reported 19,988 ANC 1<sup>st</sup> visits in 2018 but the value increased to 32,522 in 2019.  This increase is significantly more than the nationwide increase.  This suspicious value should be investigated.  Notice that District C is included in the box listing districts with “divergent scores”.
 
 
-    ![alt_text](images/image047.png "image_selectou")
+    ![alt_text](resources/images/dqinfo/image047.png "image_selectou")
 
 
     **Interpret your findings-**
@@ -455,14 +455,14 @@ You can also use it to assess data over any period.
     
     **Question:**  How many districts now have divergent scores? 
 
-    ![alt_text](images/image048.png "image_selectou")
+    ![alt_text](resources/images/dqinfo/image048.png "image_selectou")
 
 
     **Review the scatterplot showing consistency over time of DPT 3**
     
     Scroll down and find the table and chart for this indicator.  Note how the dots are more scattered than for ANC 1.  Ordinarily, we would not expect for DPT 3 values to be so unpredictable.  However, as shown by the graph in the lower right corner, reporting of EPI data has risen dramatically.  With data that are less 70% complete we should not expect consistency from year to year even in indicators such at immunizations and ANC visits which normally should be quite stable.
 
-    ![alt_text](images/image049.png "image_selectou")
+    ![alt_text](resources/images/dqinfo/image049.png "image_selectou")
 
 
     **In summary**, there are many reasons that data may not be consistent from year to year.  However, when we find consistency-over-time, it is reassuring that the data are of better quality.
@@ -498,15 +498,15 @@ You can also use it to assess data over any period.
 
     Scroll down to Section 3a to see how some coverage estimates based upon routine data compare to survey estimates.  In the example, notice that the findings are now disaggregated by region rather than by district.  Notice that the “Routine” estimates of coverage are each reasonably close to the “Survey” estimates. The match will seldom be this good.  However, even in this example the match is not perfect.  The routine estimates are consistently less than the survey estimates. The “Overall score” is 92.2%, meaning that the routine estimate at national level is 92.2% of the survey estimate at national level.  Can you think of any reasons that the routine estimates would be lower?  One reason is that, as we have seen, the completeness of reporting of ANC data is only about 92%.  We shall see when we examine Domain 4 whether over-estimation of the denominator may be another reason.
 
-     ![alt_text](images/image050.png "image_selectou")
+     ![alt_text](resources/images/dqinfo/image050.png "image_selectou")
 
     In our example, the match is poor for the DPT 3 coverage.  The reason, over course, is the low completeness of the EPI data set.
 
-    ![alt_text](images/image051.png "image_selectou")
+    ![alt_text](resources/images/dqinfo/image051.png "image_selectou")
 
     As shown by the figure below, the match is considerably better if we use as the numerator the data on Penta 3<sup>rd</sup> doses that is reported on the HMIS form rather than the data on DPT 3 that is reported on the EPI form.  Again, we note some tendency for the routine estimate to be slightly lower than the survey estimate.
 
-    ![alt_text](images/image052.png "image_selectou")
+    ![alt_text](resources/images/dqinfo/image052.png "image_selectou")
 
 30. **Use the Tool to assess denominators (Section 4a)**– 
 
@@ -522,7 +522,7 @@ You can also use it to assess data over any period.
     “Domain 4” of a data quality desk review assesses the denominators used by DHIS2.  Here we discuss findings related to section 4a which compares the official estimate of the live births to the U.N. estimate of live births.  
 
 
-    ![alt_text](images/image053.png "image_selectou")
+    ![alt_text](resources/images/dqinfo/image053.png "image_selectou")
 
     
     Here, with our example, we have identified one more reason why the estimates of coverage based on routine data (and based on the official estimates of pregnancies, live births or population &lt; 1 year) are somewhat lower than the survey estimates – if we believe the U.N. estimate, the official estimate of live births may be too high.  If we used the U.N. estimate as the denominator, then the routine coverage estimate would be higher.
@@ -558,11 +558,11 @@ Before the Tool can generate findings for section 3a (external data comparisons)
 
  3. **Configure the denominators used by the Tool**– Click on More, then Administration then Denominators.
 
-     ![alt_text](images/image054.png "image_selectou")
+     ![alt_text](resources/images/dqinfo/image054.png "image_selectou")
 
     There are no denominators set up by default.  The ones you see in the example above had to be added one-at-a-time by clicking on the Add button.  A window will appear for configuring the denominator (see figure to the right). Notice that a special data element group has been configured for “Population estimates”.  This includes the data element “Expected pregnant women”.  Data for this data element have been imported as part of the standard configuration of DHIS2 denominators.  Notice that “Lowest available level” has been set to “Region”.  This is because reliable DHS survey estimates are not available below the level of region.  Even if you configure other outputs of the Tool to disaggregate findings by district, the external comparison findings will only be disaggregated by region.
 
-    ![alt_text](images/image055.png "image_selectou")
+    ![alt_text](resources/images/dqinfo/image055.png "image_selectou")
 
      Make sure that you add to this the following denominators:
  
@@ -577,28 +577,28 @@ Before the Tool can generate findings for section 3a (external data comparisons)
 
     4.**Configure the Tool to make external comparisons** – Click on “More” then “Administration” then “External data comparison”.
 
-     ![alt_text](images/image056.png "image_selectou")
+     ![alt_text](resources/images/dqinfo/image056.png "image_selectou")
 
     There are no default settings.  The ones shown above had to be added one at a time by clicking on the Add button. A window will appear for configuring the comparison (see figure to the right).  The DHS coverage estimates and the UN population estimates have been imported as part of the newly configured “External data”  data set.  These same data elements have also been assigned to a newly configured “External data” data element group.  You see in the exmaple that this data element group has been selected, then “ANC 1 coverage (DHS 2014)” can be selected from the drop-down menu.
 
 
-    ![alt_text](images/image057.png "image_selectou")
+    ![alt_text](resources/images/dqinfo/image057.png "image_selectou")
      
  
      The “Routine data numerator” must be selected from the list of numerators that have already been configured for the Tool.  The “Routine data denominator” must be selected from the list of denominators already configured for the tool.  Notice that the Survey level has been set to “Region”.
 
 
-       ![alt_text](images/image058.png "image_selectou")
+       ![alt_text](resources/images/dqinfo/image058.png "image_selectou")
      
      5.**Configure Denominator relations**– When you click on More-Administration –Denominator relations, you should find that the table has one default row labeled “Total population – census to UN projection.
 
-    ![alt_text](images/image059.png "image_selectou")
+    ![alt_text](resources/images/dqinfo/image059.png "image_selectou")
 
     To configure this relation, click on Edit. Edit the Name to read “Live births – official to UN estimate”.  Leave Type set to “UN population projection”.  Click on the down arrows to the left of Denominator A and Denominator B to select from the list. The list is limited to the denominators which you configured in step 3 above.  For Denominator A, choose the official estimate of live births (or the best available equivalent).  For Denominator B, choose the UN estimate of live births.  Save your configuration.
 
-       ![alt_text](images/image060.png "image_selectou")
+       ![alt_text](resources/images/dqinfo/image060.png "image_selectou")
 
-       ![alt_text](images/image061.png "image_selectou")
+       ![alt_text](resources/images/dqinfo/image061.png "image_selectou")
 
 
 
