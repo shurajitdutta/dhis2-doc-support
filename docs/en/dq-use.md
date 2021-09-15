@@ -2,7 +2,7 @@
 
 # How to use and interpret WHO’s Data Quality Tool 
 
-[Note to the facilitator:  this section can best be presented using a live, online projection of the DQ TrainingLand instance of DHIS2 ([https://who.dhis2.net/dq](https://who.dhis2.net/dq) ).  The document can be presented in its entirety, followed by the 3 exercises.  The instructions for the 3 exercises should be printed together as a single document, a copy of which should be given to each participant. Guidance on configuration of the numerators for the Tool is provided in a separate document entitled “How to Configure the WHO Data Quality Tool.docx”. Presentation related to assessment of denominators and comparison with survey estimates is dealt with in a separate documents entitled “Quality Denominators.ppt”. ]
+[Note to the facilitator:  this section can best be presented using a live, online projection of the DQ TrainingLand instance of DHIS2 ([https://who.-demos.dhis2.org/dq](https://who.-demos.dhis2.org/dq) ).  The document can be presented in its entirety, followed by the 3 exercises.  The instructions for the 3 exercises should be printed together as a single document, a copy of which should be given to each participant. Guidance on configuration of the numerators for the Tool is provided in a separate document entitled “How to Configure the WHO Data Quality Tool.docx”. Presentation related to assessment of denominators and comparison with survey estimates is dealt with in a separate documents entitled “Quality Denominators.ppt”. ]
 
 #Contents
 
@@ -32,7 +32,7 @@
 
 <font size="2">
 
-1. **Log into the DHIS2 instance** <https://who.dhis2.net/dq>   
+1. **Log into the DHIS2 instance** <https://who.-demos.dhis2.org/dq>   
 `Username:  demo      Password:  District1#`
 
 
@@ -659,7 +659,7 @@ Before the Tool can generate findings for section 3a (external data comparisons)
 
 [^12]:
 
-     Unfortunately, with [https://who.dhis2.net/dq](https://who.dhis2.net/dq) , the reporting rates of all data sets are below 50% prior to 2017.  Data from years with such incomplete reporting should not be used to assess year-to-year consistency.
+     Unfortunately, with [https://who.-demos.dhis2.org/dq](https://who.-demos.dhis2.org/dq) , the reporting rates of all data sets are below 50% prior to 2017.  Data from years with such incomplete reporting should not be used to assess year-to-year consistency.
 
 [^13]:
 
